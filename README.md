@@ -1,6 +1,7 @@
 # learning_vue
 
-This template should help get you started developing with Vue 3 in Vite.
+Blob App with VueJS, Composition API, Vue Router and Pinia.
+Actually based on a tutorial from [Learn with Jon](https://www.youtube.com/@LearnWithJonVadar)
 
 ## Recommended IDE Setup
 
