@@ -1,7 +1,7 @@
 # learning_vue
 
 Blob App with VueJS, Composition API, Vue Router and Pinia.
-Actually based on a tutorial from [Learn with Jon](https://www.youtube.com/@LearnWithJonVadar)
+Actually based on a tutorial from ['Learn with Jon' Youtube Channel](https://www.youtube.com/@LearnWithJonVadar)
 
 ## Recommended IDE Setup
 
