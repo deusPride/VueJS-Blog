@@ -20,9 +20,11 @@ postStore.getPosts()
 nav {
   padding: 1rem 2rem;
   background-color: #1e40af;
+  overflow: hidden;
+  font-weight: 700;
   .nav-link {
     color: #fff;
-    padding: 5px 15px;
+    padding: 85px 15px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
     margin-right: 1rem;

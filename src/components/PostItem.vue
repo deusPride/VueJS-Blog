@@ -13,7 +13,7 @@ defineProps({
       <div>
         <button @click="postStore.deletePost(post.id)" class="del material-icons">delete</button>
         <button @click="postStore.savePost(post.id)" class="save material-icons">
-          {{ post.is_saved ? 'bookmark' : 'bookmark_order' }}
+          {{ post.is_saved ? 'bookmark' : 'bookmark_border' }}
         </button>
       </div>
     </div>

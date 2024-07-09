@@ -13,31 +13,40 @@ postStore.getPosts()
 </script>
 
 <template>
-  <div class="header">
-    <div>
-      <h2>{{ postFilter }} posts</h2>
-      <span v-show="postStore.loading" class="material-icons">cached</span>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h2>{{ postFilter }} posts</h2>
+        <span v-show="postStore.loading" class="material-icons">cached</span>
+      </div>
+      <button @click="setPostFilter">
+        Show {{ postFilter === 'All' ? 'saved' : 'all' }} posts
+      </button>
     </div>
-    <button @click="setPostFilter">Show {{ postFilter === 'All' ? 'saved' : 'all' }} posts</button>
-  </div>
-  <div v-if="postStore.errMsg" class="error">{{ postStore.errMsg }}</div>
-  <div v-if="postFilter === 'All'">
-    <div v-for="post in postStore.sorted" :key="post.id">
-      <MyWrapper>
-        <PostItem :post="post" />
-      </MyWrapper>
+    <div v-if="postStore.errMsg" class="error">{{ postStore.errMsg }}</div>
+    <div v-if="postFilter === 'All'">
+      <div v-for="post in postStore.sorted" :key="post.id">
+        <MyWrapper>
+          <PostItem :post="post" />
+        </MyWrapper>
+      </div>
     </div>
-  </div>
-  <div v-if="postFilter === 'Saved'">
-    <div v-for="post in postStore.saved" :key="post.id">
-      <MyWrapper>
-        <PostItem :post="post" />
-      </MyWrapper>
+    <div v-if="postFilter === 'Saved'">
+      <div v-for="post in postStore.saved" :key="post.id">
+        <MyWrapper>
+          <PostItem :post="post" />
+        </MyWrapper>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.container {
+  min-width: 500px;
+  max-width: 76%;
+  margin: auto;
+}
 .header {
   padding: 20px;
   display: flex;
