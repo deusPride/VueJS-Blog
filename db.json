@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "This great book!",
+      "body": "Lorem ipsum corpus text",
+      "author": "John Doe",
+      "created_at": "11/06/2023",
+      "is_saved": false
+    }
+  ]
+}
